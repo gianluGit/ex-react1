@@ -1,27 +1,93 @@
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App {
+  width: 80%;
+  margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.title-page {
+  background-color: #742525;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.title-page a {
+  display: inline-block;
+  padding: 30px;
+  text-decoration: none;
   color: white;
 }
 
+.watch {
+  color: white;
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main-watch {
+  text-align: center;
+  font-size: 250px;
+  font-weight: bold;
+}
+
+.watch-info {
+  display: block;
+  text-align: right;
+  font-size: 40px;
+}
+
+.watch-container {
+  display: flex;
+  margin-top: 15px;
+  justify-content: flex-end;
+}
+
+.card-watch {
+  font-size: 25px;
+  margin-left: 10px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: lightgray;
+
+  transition: 0.3s;
+  
+}
+.card-watch:hover{
+  opacity: 0.8;
+}
+
+.card-watch span {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* media query */
+
+@media all and (max-width: 1000px) {
+  .main-watch {
+    font-size: 160px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .watch-info {
+    text-align: center;
+  }
+
+  .watch-container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card-watch {
+    margin-top: 10px;
+  }
+
+}
+
+@media all and (max-width: 680px) {
+  .main-watch {
+    font-size: 100px;
+  }
+
+  .watch-info {
+    font-size: 25px;
+    text-align: center;
   }
 }
+
